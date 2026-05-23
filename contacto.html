@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café Aroma - Contacto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50 text-stone-800">
+
+  <!-- Barra de navegación -->
+  <nav class="bg-stone-800 text-white px-6 py-4 flex justify-between items-center">
+    <span class="text-xl font-bold">☕ Café Aroma</span>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-amber-300">Inicio</a>
+      <a href="menu.html" class="hover:text-amber-300">Menú</a>
+      <a href="contacto.html" class="hover:text-amber-300">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Título -->
+  <header class="text-center py-12 px-6">
+    <h1 class="text-3xl font-bold">Contáctanos</h1>
+    <p class="text-stone-600 mt-2">Nos encantaría saber de ti</p>
+  </header>
+
+  <!-- Datos e info -->
+  <section class="max-w-2xl mx-auto px-6 pb-10 grid sm:grid-cols-2 gap-6">
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-3">📍 Dónde estamos</h3>
+      <p class="text-stone-600">Av. Principal #123, Centro.</p>
+      <p class="text-stone-600 mt-2">🕒 Lun a Dom: 8:00 - 21:00</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-3">📞 Contacto</h3>
+      <p class="text-stone-600">Teléfono: 555-123-4567</p>
+      <p class="text-stone-600 mt-2">Correo: hola@cafearoma.com</p>
+    </div>
+  </section>
+
+  <!-- Formulario sencillo -->
+  <section class="max-w-md mx-auto px-6 pb-16">
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h3 class="font-bold text-lg mb-4">Envíanos un mensaje</h3>
+      <input type="text" placeholder="Tu nombre"
+             class="w-full border border-stone-300 rounded p-2 mb-3">
+      <input type="email" placeholder="Tu correo"
+             class="w-full border border-stone-300 rounded p-2 mb-3">
+      <textarea placeholder="Tu mensaje" rows="3"
+                class="w-full border border-stone-300 rounded p-2 mb-3"></textarea>
+      <button onclick="enviar()"
+              class="w-full bg-amber-700 hover:bg-amber-800 text-white py-2 rounded">
+        Enviar
+      </button>
+      <p id="aviso" class="text-green-600 text-sm mt-3 hidden">
+        ✅ ¡Gracias! Tu mensaje fue enviado.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-stone-800 text-white text-center py-4">
+    <p>© 2026 Café Aroma. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function enviar() {
+      document.getElementById("aviso").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
