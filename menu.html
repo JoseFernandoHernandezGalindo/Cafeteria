@@ -4,65 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Café Aroma - Menú</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-amber-50 text-stone-800">
+<body>
 
-  <!-- Barra de navegación -->
-  <nav class="bg-stone-800 text-white px-6 py-4 flex justify-between items-center">
-    <span class="text-xl font-bold">☕ Café Aroma</span>
-    <div class="space-x-4">
-      <a href="index.html" class="hover:text-amber-300">Inicio</a>
-      <a href="menu.html" class="hover:text-amber-300">Menú</a>
-      <a href="contacto.html" class="hover:text-amber-300">Contacto</a>
+  <nav class="navbar">
+    <span class="logo">☕ Café Aroma</span>
+    <div class="links">
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="contacto.html">Contacto</a>
     </div>
   </nav>
 
-  <!-- Título -->
-  <header class="text-center py-12 px-6">
-    <h1 class="text-3xl font-bold">Nuestro Menú</h1>
-    <p class="text-stone-600 mt-2">Hecho con los mejores ingredientes</p>
-  </header>
+  <div class="titulo-seccion">
+    <h1>Nuestro Menú</h1>
+    <p>Hecho con los mejores ingredientes</p>
+  </div>
 
-  <!-- Lista de productos -->
-  <section class="max-w-3xl mx-auto px-6 pb-16 grid sm:grid-cols-2 gap-6">
-
-    <div class="bg-white p-6 rounded-xl shadow flex justify-between items-center">
+  <section class="menu">
+    <div class="item">
       <div>
-        <h3 class="font-bold text-lg">Espresso</h3>
-        <p class="text-stone-600 text-sm">Café puro e intenso.</p>
+        <h3>Espresso</h3>
+        <p class="desc">Café puro e intenso.</p>
       </div>
-      <span class="text-amber-700 font-bold">$35</span>
+      <span class="precio">$35</span>
     </div>
 
-    <div class="bg-white p-6 rounded-xl shadow flex justify-between items-center">
+    <div class="item">
       <div>
-        <h3 class="font-bold text-lg">Capuchino</h3>
-        <p class="text-stone-600 text-sm">Espresso con leche espumada.</p>
+        <h3>Capuchino</h3>
+        <p class="desc">Espresso con leche espumada.</p>
       </div>
-      <span class="text-amber-700 font-bold">$45</span>
+      <span class="precio">$45</span>
     </div>
 
-    <div class="bg-white p-6 rounded-xl shadow flex justify-between items-center">
+    <div class="item">
       <div>
-        <h3 class="font-bold text-lg">Latte</h3>
-        <p class="text-stone-600 text-sm">Suave y cremoso.</p>
+        <h3>Latte</h3>
+        <p class="desc">Suave y cremoso.</p>
       </div>
-      <span class="text-amber-700 font-bold">$50</span>
+      <span class="precio">$50</span>
     </div>
 
-    <div class="bg-white p-6 rounded-xl shadow flex justify-between items-center">
+    <div class="item">
       <div>
-        <h3 class="font-bold text-lg">Pastel de zanahoria</h3>
-        <p class="text-stone-600 text-sm">Rebanada casera.</p>
+        <h3>Pastel de zanahoria</h3>
+        <p class="desc">Rebanada casera.</p>
       </div>
-      <span class="text-amber-700 font-bold">$55</span>
+      <span class="precio">$55</span>
     </div>
-
   </section>
 
-  <!-- Pie de página -->
-  <footer class="bg-stone-800 text-white text-center py-4">
+  <footer>
     <p>© 2026 Café Aroma. Todos los derechos reservados.</p>
   </footer>
 
